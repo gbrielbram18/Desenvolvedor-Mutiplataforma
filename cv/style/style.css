@@ -51,24 +51,24 @@ a{
     display: flex;
     justify-content: space-around;
     /*flex-direction: column;*/
+
 }
 
 
 
-img{
+.user img{
     width: 18rem;
     border: 1px solid black;
     border-radius: 10000px;
+
 }
 
-.contato{
+
+.ctt{
     justify-content: space-around;
     flex-direction: column;
     
 }
 
-.contato h2,a {
-    flex-direction: column;
-}
 
 
