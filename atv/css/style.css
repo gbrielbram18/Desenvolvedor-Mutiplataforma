@@ -75,3 +75,35 @@ body{
     padding: 18px;
 
 }
+
+.menu li a:hover{
+    text-decoration: underline ;
+}
+
+.image{
+max-width: 1000px;
+height: 250px;
+border: 1px solid black;
+border-radius: 10px;
+margin: 20px;
+
+/*Cortar imagem*/
+overflow: hidden;
+
+
+}
+
+/*Content HOME*/
+
+.content-box{
+margin: 20px;
+border: 2px solid gray;
+
+
+}
+
+.box{
+border: 1px solid goldenrod;
+max-width: 300px;
+}
+
