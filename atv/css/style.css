@@ -51,6 +51,7 @@ body{
     align-items: center;
     
     
+    background: rgb(216, 206, 206);
 
  }
 
@@ -65,13 +66,12 @@ body{
 
 
 .menu li a {
-    background: rgb(216, 206, 206);
     font-size: 23px;
     text-decoration: none;
     color: blueviolet;
   
     text-align: center;
-    border: 2px solid black;
+   
     padding: 18px;
 
 }
