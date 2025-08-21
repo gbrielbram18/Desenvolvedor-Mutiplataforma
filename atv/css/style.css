@@ -6,9 +6,8 @@
 }
 
 body {
-    background-color: aliceblue;
+    background: rgb(234, 232, 232);
 }
-
 
 .container {
     background: #fff;
@@ -16,144 +15,194 @@ body {
     margin: 0 auto;
 }
 
-/* Criando o header*/
+.titleGeneral h1 {
+    padding-left: 25px;
+    color: orangered;
+    background: white;
+}
+
+/* Criando o Header */
 header {
-    /*cor de fundo*/
-    background: rgb(96, 96, 96);
-    /* altura*/
+    background: orangered;
+    /* Altura */
     height: 130px;
-    /*borda*/
-    border-bottom: 3px solid black;
-
-
-    /*Flexbox*/
+    border-bottom: 3px solid yellow;
+    /* Flexbox */
     display: flex;
     align-items: center;
 }
 
-
 header img {
-    /*Espacamento da imagem*/
     margin-left: 15px;
-    margin-right: 15px;
-
+    margin-right: 20px;
 }
 
 header h2 {
-    color: bisque;
+    color: #fff;
     text-transform: uppercase;
     font-size: 30px;
 }
 
+/* MENU DO SITE */
 .menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
-    background: rgb(216, 206, 206);
-
+    background-color: #dde6ea;
 }
 
 .menu li {
-
-
-    /*espaçamento*/
+    /*Espaçamentos*/
     padding: 18px;
-    text-align: center;
-
 }
-
 
 .menu li a {
     font-size: 23px;
     text-decoration: none;
-    color: blueviolet;
-
+    color: black;
     text-align: center;
-
     padding: 18px;
-
 }
 
 .menu li a:hover {
     text-decoration: underline;
 }
 
-.image {
-    max-width: 800px;
-    height: 180px;
-    border: 1px solid black;
+/* BANNER */
+.banner {
+    max-width: 1000px;
+    height: 250px;
+    border: 2px solid #4681d6;
     border-radius: 10px;
     margin: 20px;
-
     /*Cortar imagem*/
     overflow: hidden;
-
-
 }
 
-/*Content HOME*/
-
+/* Content HOME */
 .content-box {
     margin: 20px;
-    border: 2px solid gray;
-    justify-content: space-around;
+    /*Flexbox*/
     display: flex;
-
-
-
 }
 
 .box {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #4681d6;
     max-width: 300px;
     border-radius: 10px;
+    /*Cortar imagem*/
     overflow: hidden;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 35px 20px 15px;
+    /*Sombra*/
     box-shadow: 2px 3px 3px #bcbaba;
-
-
 }
 
+.box img {
+    border-bottom: 1px solid #4681d6;
+}
 
 .box p {
-    padding: 10px 10px 10px 10px;
-
+    padding: 10px;
     color: rgb(69, 68, 68);
 }
 
 .box a {
-    padding: 10px 0px 10px 0px;
+    padding: 0 0 10px 10px;
     display: block;
-    color: aqua;
+    color: #4681d6;
+    text-decoration: none;
+    /*Negrito*/
+    font-weight: bold;
 }
 
-
-.titleGeneral h1 {
-    padding-left: 25px;
-    color: orangered;
+.box a:hover {
+    text-decoration: underline;
 }
-
 
 .promocao {
-    border: 1px solid black;
-    /*Flexbox*/
+   
+    /*flexbox*/
     display: flex;
     justify-content: center;
 }
 
-
 .promocao img {
     max-width: 800px;
     height: 180px;
-    border: 1px solid black;
+    border: 2px solid #4681d6;
     border-radius: 10px;
     margin: 20px;
-
     /*Cortar imagem*/
     overflow: hidden;
+}
+
+/* NOVIDADES */
+.novidades {
+    background-color: #b7b7b7;
+    margin-top: 20px;
+    /*  Flexbox */
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black ;
+}
+
+.novidades span {
+    font-size: 150px;
+}
+
+.novidades article {
+    /*  Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.novidades form {
+  width: 100%;  
+}
+
+.novidades form input {
+    max-width: 300px;
+    padding-left: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #bcbaba;
+}
+
+.novidades form button {
+    border: 1px solid #4681d6;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    color: #4681d6;
+    font-weight: bold;
+}
+
+footer {
+    background: #000;
+    height: 40px;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+/*Pagina sobre*/
 
 
+.spaceSobre{
+    margin: 20px 0 25px 0;
 
 }
+/*
+.contentSobre{
+
+}*/

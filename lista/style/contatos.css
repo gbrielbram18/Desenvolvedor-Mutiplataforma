@@ -1,57 +1,195 @@
-body{
-    font-size: 25px;
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     font-family: Arial, Helvetica, sans-serif;
-    background: grey;    
-
-    padding-left: 10rem;
-    padding-right: 10rem;
-
 }
 
-
-
-h1{
-    padding-left: 10px;
-
+body {
+    background: rgb(234, 232, 232);
 }
 
-p{
+.container {
+    background: #fff;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.titleGeneral h1 {
     padding-left: 25px;
+    color: orangered;
 }
 
-
-
-/*para tirar o underline do link*/
-a{
-    padding-left: 25px;
-    text-decoration: none;
+/* Criando o Header */
+header {
+    background: orangered;
+    /* Altura */
+    height: 130px;
+    border-bottom: 3px solid yellow;
+    /* Flexbox */
+    display: flex;
+    align-items: center;
 }
 
-
-/*para por de volta caso o usuario passe o mouse no link*/
-
-
-a:hover{
-    text-decoration: underline;
+header img {
+    margin-left: 15px;
+    margin-right: 20px;
 }
 
-.l{
+header h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* MENU DO SITE */
+.menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
-
-    
+    background-color: #dde6ea;
 }
 
-
-.fundo{
-    background-color: white;
-    border: 2px solid black;
-
+.menu li {
+    /*Espaçamentos*/
+    padding: 18px;
 }
 
-iframe{
-    padding-bottom: 10px;
+.menu li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 18px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* BANNER */
+.banner {
+    max-width: 1000px;
+    height: 250px;
+    border: 2px solid #4681d6;
+    border-radius: 10px;
+    margin: 20px;
+    /*Cortar imagem*/
+    overflow: hidden;
+}
+
+/* Content HOME */
+.content-box {
+    margin: 20px;
+    /*Flexbox*/
+    display: flex;
+}
+
+.box {
+    border: 1px solid #4681d6;
+    max-width: 300px;
+    border-radius: 10px;
+    /*Cortar imagem*/
+    overflow: hidden;
+    margin: 10px 35px 20px 15px;
+    /*Sombra*/
+    box-shadow: 2px 3px 3px #bcbaba;
+}
+
+.box img {
+    border-bottom: 1px solid #4681d6;
+}
+
+.box p {
+    padding: 10px;
+    color: rgb(69, 68, 68);
+}
+
+.box a {
+    padding: 0 0 10px 10px;
+    display: block;
+    color: #4681d6;
+    text-decoration: none;
+    /*Negrito*/
+    font-weight: bold;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+.promocao {
+   
+    /*flexbox*/
+    display: flex;
+    justify-content: center;
+}
+
+.promocao img {
+    max-width: 800px;
+    height: 180px;
+    border: 2px solid #4681d6;
+    border-radius: 10px;
+    margin: 20px;
+    /*Cortar imagem*/
+    overflow: hidden;
+}
+
+/* NOVIDADES */
+.novidades {
+    background-color: #b7b7b7;
+    margin-top: 20px;
+    /*  Flexbox */
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black ;
+}
+
+.novidades span {
+    font-size: 150px;
+}
+
+.novidades article {
+    /*  Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.novidades form {
+  width: 100%;  
+}
+
+.novidades form input {
+    max-width: 300px;
     padding-left: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #bcbaba;
+}
+
+.novidades form button {
+    border: 1px solid #4681d6;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    color: #4681d6;
+    font-weight: bold;
+}
+
+footer {
+    background: #000;
+    height: 40px;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
 }
