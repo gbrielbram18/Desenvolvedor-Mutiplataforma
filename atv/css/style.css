@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    list-style: none;
+    /* list-style: none; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -49,6 +49,7 @@ header h2 {
     justify-content: space-around;
     align-items: center;
     background-color: #dde6ea;
+    list-style: none;
 }
 
 .menu li {
@@ -206,3 +207,28 @@ footer p {
 .contentSobre{
 
 }*/
+
+.containerLista{
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+}
+
+.containerLista details{
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer ;
+}
+
+
+.containerLista article{
+    margin-top: 8px;
+    color: #4681d6;
+}
+
+
+
+
