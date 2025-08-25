@@ -244,12 +244,12 @@ footer p {
 
 form{
     margin: 20px;
-    border: 1px solid blue;
+
 }
 
 .form-group{
-    border: 1px solid blueviolet;
-
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
@@ -271,7 +271,17 @@ form{
     border-radius: 7px;
 }
 
+.form-group-sexo label{
+    display: inline-block;
+    margin-top: 10px;
+
+}
 
 
-
+.form-group select{
+    height: 30px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
 
