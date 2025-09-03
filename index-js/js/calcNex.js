@@ -1,24 +1,34 @@
 
 
-function mostrarNome(nome,idade){
-    console.log(nome);
 
+
+
+function somar(num1,num2){
+    console.log(num1 + num2);
 }
-function idade(){
+ 
 
+//sub 
+function subtrair(num1,num2){
+    console.log( num1 - num2);
 }
 
-
-function pularlinha(){
-    console.log("<br><br>");
+//mult
+function multiplicar(num1,num2){
+    console.log(num1 * num2);
 }
 
-// chamar função
-mostrarNome("gabriel");
-pularlinha();
-mostrarNome("ashaganda");
-pularlinha();
-mostrarNome("ronaldo");
+//div
+
+function dividir(num1,num2){
+    console.log(num1 / num2)
+}
+
+//Implimir função
+somar(10,10);
+somar(10,15);
+somar(10,20);
+somar(3,3);
 
 
-
+subtrair( 15, 10)
