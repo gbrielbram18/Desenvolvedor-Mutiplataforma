@@ -13,5 +13,5 @@
 
 
 for(  let i=0; i<=10 ; i++){
-console.log("Esta e a xª vex qye essa frase e exibida no console")
+console.log(`Esta e a ${i}ª vez que essa frase e exibida no console`)
 }
