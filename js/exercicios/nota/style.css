@@ -65,9 +65,10 @@ body {
     color: #191970;
 }
 
-#resultado {
+#result {
     color: #fff;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 #message {
