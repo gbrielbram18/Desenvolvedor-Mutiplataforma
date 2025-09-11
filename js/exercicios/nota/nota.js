@@ -1,27 +1,35 @@
 const inputNota = document.getElementById("nota");
 const resultado = document.getElementById("result");
+const message = document.getElementById("message");
+
 
 function resultadoNotaClick(event) {
+  event.preventDefault();
+  // console.log(inputNota);
+  
+  if (inputNota.value >= 6) {
+    resultado.innerHTML= "Aprovado";
+    resultado.style="color:green;"
+    
+  } else if (inputNota.value <= 5) {
+    resultado.innerHTML= "reporvado, estude mais";
+    resultado.style="color:red";
 
-    event.preventDefault();
-    // console.log(inputNota);
-
-    if (inputNota.value >= 6) {
-       alert("voce esta aprovado ");
-       resultado.innerHTML= "Aprovado";
-
-    } else if (inputNota.value <= 5) {
-      resultado.innerHTML= "reporvado, estude mais";
-
-    } else if (inputNota.value == 10) {
-       resultado.innerHTML= "Aprovado";
+  } else if (inputNota.value == 10) {
+    resultado.innerHTML= "Aprovado";
+    
+  }
+  
+  //Validação de fomrulario
+  
+  
+  if (inputNota.value == "") {
+      message.style.display="block";
+      
+    
+        return false;
     }
-
-    //Validação de fomrulario
-
-    if (inputNota.value == "") {
-        alert("preencha o campo")
-    }
+    message.style.display="none";
 
     inputNota.value = "";
 

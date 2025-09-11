@@ -40,13 +40,15 @@ body {
 .form-control label {
     /* Espaçamento entre os elementos */
     margin-top: 15px;
+    font-size: 20px;
     color: #fff;
     display: block;
+
 }
 
-#verifica-nota {
+#verifica-idade {
     /* Cor do fundo */
-    background: #191970;
+    background: #0a9f9a;
     /* Borda do Botão */
     border: 1px solid white;
     /*Cor de texto */
@@ -58,11 +60,13 @@ body {
     /* Cursor mãozinha */
     cursor: pointer;
     transition: all 0.9s;
+
 }
 
-#verifica-nota:hover {
+#verifica-idade:hover {
     background-color: rgb(232, 229, 229);
     color: #191970;
+   
 }
 
 #result {
@@ -82,13 +86,7 @@ body {
     display: block;
 }
 
-
-a{
-    display: flex;
-    text-align: justify;
-    list-style: none;
-    color: black;
+h1{
+    text-align: center;
     margin: 10px;
 }
-
-
