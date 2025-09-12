@@ -1,4 +1,4 @@
-const niver = document.getElementById("dias")
+const niver = document.getElementById("dias");
 
 function niverRodrigo(){
     // event.preventDefault();   
@@ -11,6 +11,7 @@ function niverRodrigo(){
         if( diasFaltando <0){
             diasFaltando+=7;
             niver.innerHTML = diasFaltando
+         
         }
         
 
