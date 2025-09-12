@@ -17,7 +17,7 @@ function IdadeClick(event){
     }
 
 
-    if (inputIdade.value == "") {
+    if (inputIdade.value == ""){
       message.style.display="block";
         return false;
     }
