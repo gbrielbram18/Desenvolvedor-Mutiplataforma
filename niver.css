@@ -28,4 +28,16 @@ img{
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
+    
+}
+
+.horario{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: dimgrey;
+    color: red;
+    
+    /* text-shadow:5px 5px 10px  black; */
 }

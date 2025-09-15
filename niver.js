@@ -1,28 +1,31 @@
-const niver = document.getElementById("dias");
-
-function niverRodrigo(){
-    // event.preventDefault();   
+function diasParaNiver() {
     const hoje = new Date();
-        const diasSemana = hoje.getDay(); // 0=Dom, 1=seg, ..., 4=quint 
-        
-        let diasFaltando = 4-diasSemana;
-        
+    const diaSemana = hoje.getDay(); // 0=Dom, 1=Seg, ..., 4=Quin
+    let diasFaltando = 4 - diaSemana;
 
-        if( diasFaltando <0){
-            diasFaltando+=7;
-            niver.innerHTML = diasFaltando
-         
-        }
-        
+    if (diasFaltando < 0) {
+        diasFaltando += 7;
+    }
+    
+    document.getElementById("dias").textContent = diasFaltando;
+}
 
+function atualizarHora() {
+    const horaHtml = document.getElementById("hora");
+    const agora = new Date();
+    const hora = agora.getHours().toString().padStart(2, '0');
+    const minutos = agora.getMinutes().toString().padStart(2, '0');
+    const segundos = agora.getSeconds().toString().padStart(2, '0');
 
-
-
+    horaHtml.textContent = `${hora}:${minutos}:${segundos}`;
 }
 
 
-//chamar função
-niverRodrigo();
+// chamar a função
+diasParaNiver();
 
+setInterval(atualizarHora, 1000);
+
+atualizarHora();
 
 
