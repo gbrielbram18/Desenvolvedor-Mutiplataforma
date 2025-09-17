@@ -1,4 +1,5 @@
 const form = document.getElementById("newForm");
+const result =document.getElementById("result");
 
 form.addEventListener("submit", function(event) {
     // Impede envio automático
@@ -12,16 +13,20 @@ form.addEventListener("submit", function(event) {
         return false;
     }
 
-    if(email.includes("@") || !email.includes(".") ){
-        alert("Email invalido. Tente novamente")
-        return ;
+    // Validação simples: tem @ e .
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Email inválido. Tente novamente");
+        return;
     }
 
-    alert("alert cadastrado com Sucesso!📧");
+    alert("Email cadastro com sucesso! ✅");
+
+    if(email.includes("@") || email.includes(".")){
+        result.innerHTML = "Seja Bem vindo!";
+        result.style="padding:10px"
+    }
 
     // Limpa o campo
     form.reset(); 
-
-
     
 });
