@@ -10,9 +10,15 @@ const Header = (props) => {
         borderBottom:'2px solid #696969',
     }
 
+    const titleStyle ={
+        margin: 0,
+        fontSize:'24px',
+        color:'#191970',
+    }
+
     return(
         <header style={headerStyle}>
-            <h1>{props.title}</h1>
+            <h1 style={titleStyle}>{props.title}</h1>
         </header>
     );
 }
