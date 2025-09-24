@@ -1,11 +1,15 @@
+import Header from "../componentes/Header"
+import  "./App.css"
+
 function App() {
 
 
   return (
-    <>
-    <h1>rodrigo</h1>
-    <h2>professo</h2>
-    </>
+    <main className ="container">
+
+      <Header title="Meu site" />
+      
+    </main>
   )
 }
 
